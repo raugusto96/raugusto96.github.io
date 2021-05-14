@@ -7,6 +7,11 @@ p, li {
     color: #c9c9c9;
 }
 
+a {
+    text-decoration: none;
+    color: #c9c9c9;
+}
+
 #hero-title {
     color: #c5c5c5;
 }
