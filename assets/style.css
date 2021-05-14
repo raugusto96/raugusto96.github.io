@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient( 90deg, rgb(36, 35, 33) 0%, rgb(36, 35, 33) 50.52%, rgb(18, 18, 18) 100%);
+    font-family: Raleway, sans-serif;
+}
+
+.hero-title {
+    color: whitesmoke;
+}
+
+.profile-photo {
+    width: 200px;
+}
