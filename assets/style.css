@@ -1,25 +1,31 @@
 body {
-    background: linear-gradient( 90deg, rgb(36, 35, 33) 0%, rgb(36, 35, 33) 50.52%, rgb(18, 18, 18) 100%);
-    font-family: Raleway, sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 35, 33) 0%,
+    rgb(36, 35, 33) 50.52%,
+    rgb(18, 18, 18) 100%
+  );
+  font-family: Raleway, sans-serif;
 }
 
-p, li {
-    color: #c9c9c9;
+p,
+li {
+  color: #c9c9c9;
 }
 
 a {
-    text-decoration: none;
-    color: #c9c9c9;
+  text-decoration: none;
+  color: #c9c9c9;
 }
 
 #hero-title {
-    color: #c5c5c5;
+  color: #c5c5c5;
 }
 
 .profile-photo {
-    width: 200px;
+  width: 200px;
 }
 
 .section-title {
-    color: #c1c1c1;
+  color: #c1c1c1;
 }
