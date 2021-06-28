@@ -9,8 +9,8 @@
   --color-black-first: #000000;
   --color-black-second: #373434;
   --color-black-third: #494949;
-  --color-degrade-first: linear-gradient(180deg, #252323 0%, #373434 100%);
-  --color-degrade-second: linear-gradient(90deg, rgba(37,35,35,1) 0%, rgba(55,52,52,1) 100%);
+  --color-degrade-first: linear-gradient(180deg, #0f0e0e 0%, #373434 100%);
+  --color-degrade-second: linear-gradient(90deg, rgba(69, 64, 64, 0) 0%, #454040 100%);
   /* status color */
   --color-error: #bf3939;
   --color-warning: #c7a941;
