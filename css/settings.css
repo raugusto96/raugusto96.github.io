@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* base color */
+  --color-first: #DEDEDE;
+  --color-second: #a32f2f;
+  --color-third: #ffffff;
+  /* black colors*/
+  --color-black-first: #000000;
+  --color-black-second: #373434;
+  --color-black-third: #494949;
+  --color-degrade-first: linear-gradient(180deg, #252323 0%, #373434 100%);
+  --color-degrade-second: linear-gradient(90deg, rgba(37,35,35,1) 0%, rgba(55,52,52,1) 100%);
+  /* status color */
+  --color-error: #bf3939;
+  --color-warning: #c7a941;
+  --color-sucess: #2fc18c;
+
+  --font-family: 'Inter', sans-serif;
+  /* font weight*/
+  --intro-weight: bold;
+  --headline-weight: 600;
+  --nav-menu-weight: 600;
+  --title-weight: normal;
+  --subtitle-weight: normal;
+  --body1-weight: 300; 
+  --body2-weight: 500;
+  --caption-weight: 200;
+
+  /* font sizes */
+  --intro-size: 40px;
+  --headline-size: 40px;
+  --nav-menu-size: 30px;
+  --title-size: 30px;
+  --subtitle-size: 30px;
+  --body1-size: 20px;
+  --body2-size: 15px;
+  --caption-size: 20px;
+}
+
