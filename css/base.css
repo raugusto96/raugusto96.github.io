@@ -1,5 +1,8 @@
 body {
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-family);
   background: var(--color-degrade-first);
   height: 100vh;
+  width: 100vw;
 }
