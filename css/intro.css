@@ -48,3 +48,28 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.introduction-content .social-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.introduction-content .social-content .twitter {
+  width: 45px;
+}
+
+.introduction-content .social-content .email {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.introduction-content .social-content .linkedin {
+  width: 45px;
+  margin-left: 10px;
+}
+
+.introduction-content .social-content .github {
+  width: 45px;
+  margin-left: 10px;
+}
