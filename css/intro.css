@@ -1,0 +1,89 @@
+.introduction-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: calc(80vh);
+}
+
+
+.introduction-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 10%;
+}
+
+.circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  align-self: flex-end;
+  margin-bottom: 8px;
+  background: var(--color-second);
+  margin-left: 5px;
+}
+
+.introduction-content .hero-title {
+  display: flex;
+  font-size: var(--intro-size);
+  font-weight: var(--intro-weight);
+  color: var(--color-third);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.introduction-content .intro-title {
+  font-size: var(--headline-size);
+  font-weight: var(--headline-weight);
+  color: var(--color-third);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.introduction-content .intro-description {
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  color: var(--color-first);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.introduction-content .social-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.introduction-content .social-content .twitter {
+  width: 45px;
+}
+
+.introduction-content .social-content .email {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.introduction-content .social-content .linkedin {
+  width: 45px;
+  margin-left: 10px;
+}
+
+.introduction-content .social-content .github {
+  width: 45px;
+  margin-left: 10px;
+}
+
+.introduction-section::before {
+  content: "DEV";
+  position: absolute;
+  right: 7vw;
+  bottom: 0vw;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20vw;
+  text-align: right;
+  letter-spacing: 0.025em;
+  color: rgba(55, 55, 55);
+}
