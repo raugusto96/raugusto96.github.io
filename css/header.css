@@ -27,6 +27,11 @@
 .navigation-menu .links-container a {
   color: var(--color-first);
   text-decoration: none;
+  font-weight: var(--nav-menu-weight);
+}
+
+.navigation-menu .links-container a:hover {
+  color: var(--color-second);
 }
 
 .fixed-text {
