@@ -7,6 +7,7 @@
   min-height: calc(80vh);
 }
 
+
 .introduction-content {
   display: flex;
   flex-direction: column;
@@ -72,4 +73,17 @@
 .introduction-content .social-content .github {
   width: 45px;
   margin-left: 10px;
+}
+
+.introduction-section::before {
+  content: "DEV";
+  position: absolute;
+  right: 7vw;
+  bottom: 0vw;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20vw;
+  text-align: right;
+  letter-spacing: 0.025em;
+  color: rgba(55, 55, 55);
 }
