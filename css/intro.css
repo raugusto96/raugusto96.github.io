@@ -79,11 +79,11 @@
   content: "DEV";
   position: absolute;
   right: 7vw;
-  bottom: 0vw;
+  bottom: 3vw;
   font-style: normal;
   font-weight: 700;
   font-size: 20vw;
   text-align: right;
   letter-spacing: 0.025em;
-  color: rgba(55, 55, 55);
+  color: rgb(55, 55, 55);
 }
