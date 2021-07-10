@@ -67,6 +67,11 @@
   margin-left: 10%;
 }
 
+.about-me .aside-section h2 a {
+  color: var(--color-third);
+  text-decoration: none;
+}
+
 .about-me .aside-section p {
   padding-top: 10px;
   font-size: var(--body1-size);
