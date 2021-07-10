@@ -4,7 +4,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: calc(80vh);
+  min-height: calc(100vh);
 }
 
 
@@ -85,5 +85,6 @@
   font-size: 20vw;
   text-align: right;
   letter-spacing: 0.025em;
-  color: rgb(55, 55, 55);
+  color: rgb(32, 32, 32);
+  z-index: -1;
 }
