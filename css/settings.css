@@ -28,13 +28,13 @@
   --caption-weight: 200;
 
   /* font sizes */
-  --intro-size: 40px;
-  --headline-size: 40px;
-  --nav-menu-size: 30px;
-  --title-size: 30px;
-  --subtitle-size: 30px;
-  --body1-size: 20px;
-  --body2-size: 15px;
-  --caption-size: 20px;
+  --intro-size: 3.75em;
+  --headline-size: 2.5em;
+  --nav-menu-size: 1.25em;
+  --title-size: 1.875em;
+  --subtitle-size: 1.5625em;
+  --body1-size: 1.25em;
+  --body2-size: 0.9375em;
+  --caption-size: 1.25em;
 }
 

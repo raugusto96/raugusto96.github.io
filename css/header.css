@@ -14,7 +14,8 @@
   height: 60px;
   top: -10px;
   right: -10px;
-  opacity: 90%;
+  opacity: 60%;
+  z-index: 1;
 }
 
 .navigation-menu .links-container {
@@ -24,9 +25,19 @@
   align-items: center;
 }
 
-.navigation-menu .links-container a {
+.navigation-menu .links-container .enabled {
+  color: rgb(187, 53, 53) !important;
+}
+
+.navigation-menu .links-container li {
   color: var(--color-first);
+  list-style: outside none none;
+}
+
+.navigation-menu .links-container li a {
   text-decoration: none;
+  font-weight: var(--nav-menu-weight);
+  color: inherit;
 }
 
 .fixed-text {

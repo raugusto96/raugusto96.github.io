@@ -1,0 +1,78 @@
+.about-me {
+  color: var(--color-third);
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, rgb(25, 24, 23) calc(-106px + 100vh - 1.38889vw), transparent calc(-106px + 100vh - 1.38889vw)) repeat scroll 0% 0%;  width: 100%;
+  min-height: calc(100vh);
+  display: flex;
+  align-items: center;
+}
+
+
+.about-me .about-me-section {
+  width: calc(100% + 25%);
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me .about-me-section h1 {
+  font-size: var(--intro-size);
+  font-weight: var(--intro-weight);
+}
+
+.about-me .about-me-section h2 {
+  padding-top: 10px;
+  font-size: var(--headline-size);
+  font-weight: var(--headline-weight);
+}
+
+.about-me .about-me-section p a {
+  text-decoration: none;
+  color: var(--color-first);
+}
+
+.about-me .about-me-section p {
+  padding-top: 10px;
+  text-decoration: none;
+  color: var(--color-first);
+  font-size: var(--subtitle-size);
+  font-weight: var(--subtitle-weight);
+}
+
+.about-me .about-me-section .image-section .profile-picture {
+  width: 350px;
+  height: 350px;
+  margin-top: calc(0vh - 25%);
+  object-fit: cover;
+  transform: scaleX(-1);
+  border-radius: 55px;
+  filter: drop-shadow(rgb(24, 24, 24) -10px 10px 0px);
+  margin-bottom: 4.1666vw;
+}
+
+.about-me .aside-section {
+  align-self: flex-start;
+  padding: 0 10%;
+  padding-top: calc(160px + 0vh + 1.38889vw);
+  width: calc(100% + 20%);
+}
+
+.about-me .aside-section h1 {
+  font-size: var(--intro-size);
+  font-weight: var(--intro-weight);
+  margin-left: 10%;
+}
+
+.about-me .aside-section h2 {
+  padding-top: 10px;
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  margin-left: 10%;
+}
+
+.about-me .aside-section p {
+  padding-top: 10px;
+  font-size: var(--body1-size);
+  font-weight: var(--body1-weight);
+  color: var(--color-first);
+  margin-left: 10%;
+}
