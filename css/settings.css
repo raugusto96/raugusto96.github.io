@@ -15,6 +15,9 @@
   --color-error: #bf3939;
   --color-warning: #c7a941;
   --color-sucess: #2fc18c;
+  /* before elements color */
+  --color-before-first: rgb(32, 32, 32);
+  --color-before-second: rgb(52, 52, 52);
 
   --font-family: 'Inter', sans-serif;
   /* font weight*/
