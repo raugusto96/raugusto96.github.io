@@ -44,9 +44,9 @@
 
 .skills .skills-languages .language li {
   list-style: none;
-  align-self: center;
   padding: 15px 0;
   font-size: var(--body1-size);
+  font-weight: var(--body1-weight);
 }
 
 .skills .skills-languages .language li::before {
@@ -56,7 +56,6 @@
   display: inline-block;
   text-align: center;
   width: 1.2em;
-  margin-left: -15px;
 }
 
 .skills .skills-languages .language .language-list h3 {
@@ -89,6 +88,7 @@
 
 .skills .skills-languages .programming-language-list .prog-language-list .programming-language-list li {
   font-size: var(--body1-size);
+  font-weight: var(--body1-weight);
   padding: 10px 0;
 }
 
@@ -99,7 +99,6 @@
   display: inline-block;
   text-align: center;
   width: 1.2em;
-  margin-left: -15px;
 }
 
 .skills::before {
