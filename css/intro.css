@@ -105,6 +105,6 @@
   font-size: 20vw;
   text-align: right;
   letter-spacing: 0.025em;
-  color: rgb(32, 32, 32);
+  color: var(--color-before-first);
   z-index: -1;
 }
