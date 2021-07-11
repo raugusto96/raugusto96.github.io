@@ -1,5 +1,6 @@
 .certificates {
   margin-top: 17em;
+  z-index: 0;
 }
 
 .certificates h2 {
