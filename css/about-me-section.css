@@ -1,6 +1,6 @@
 .about-me {
   color: var(--color-third);
-  background: rgba(0, 0, 0, 0) linear-gradient(to top, rgb(55, 52, 52) calc(-160px + 100vh - 1.38889vw), transparent calc(-160px + 100vh - 1.38889vw)) repeat scroll 0% 0%;  width: 100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, var(--color-black-second) calc(-160px + 100vh - 1.38889vw), transparent calc(-160px + 100vh - 1.38889vw)) repeat scroll 0% 0%;  width: 100%;
   min-height: calc(100vh);
   display: flex;
   align-items: center;
@@ -41,10 +41,11 @@
   width: 350px;
   height: 350px;
   object-fit: cover;
-  transform: scaleX(-1);
+  filter: drop-shadow(var(--color-black-second) -10px 10px 0);
   border-radius: 55px;
-  filter: drop-shadow(rgb(55, 52, 52) -10px 10px 0px);
   margin-bottom: 4.1666vw;
+  transform: scaleX(-1);
+  z-index: -1;
 }
 
 .about-me .aside-section {
