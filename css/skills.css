@@ -1,0 +1,117 @@
+.skills {
+  position: relative;
+  color: var(--color-third);
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  padding: 5% 10%;
+  z-index: -1;
+}
+
+.skills .skills-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.skills .skills-title h1 {
+  font-size: var(--intro-size);
+  font-weight: var(--intro-weight);
+  margin-bottom: 10px;
+}
+
+.skills .skills-title h2 {
+  font-size: var(--headline-size);
+  font-weight: var(--headline-weight);
+}
+
+.skills .skills-languages {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+}
+
+.skills .skills-languages .language {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills .skills-languages .language h2 {
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  margin-bottom: 10px;
+}
+
+.skills .skills-languages .language li {
+  list-style: none;
+  align-self: center;
+  padding: 15px 0;
+  font-size: var(--body1-size);
+}
+
+.skills .skills-languages .language li::before {
+  content: "\25AA";
+  color: var(--color-second);
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  width: 1.2em;
+  margin-left: -15px;
+}
+
+.skills .skills-languages .language .language-list h3 {
+  font-size: var(--subtitle-size);
+  font-weight: var(--subtitle-weight);
+}
+
+.skills .skills-languages .programming-language-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills .skills-languages .programming-language-list .prog-language-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills .skills-languages .programming-language-list h2 {
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  margin-bottom: 10px;
+}
+
+.skills .skills-languages .programming-language-list .prog-language-list .programming-language-list h3 {
+  font-size: var(--subtitle-size);
+  font-weight: var(--subtitle-weight);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.skills .skills-languages .programming-language-list .prog-language-list .programming-language-list li {
+  font-size: var(--body1-size);
+  padding: 10px 0;
+}
+
+.skills .skills-languages .programming-language-list .prog-language-list .programming-language-list li::before {
+  content: "\25AA";
+  color: var(--color-second);
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  width: 1.2em;
+  margin-left: -15px;
+}
+
+.skills::before {
+  content: "SKILLS";
+  position: absolute;
+  bottom: 15vw;
+  right: 7vw;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15vw;
+  text-align: right;
+  letter-spacing: 0.025em;
+  color: var(--color-before-second);
+  z-index: -2;
+}
