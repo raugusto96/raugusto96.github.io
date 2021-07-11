@@ -55,4 +55,5 @@
   transform: rotate(-45deg);
   border: 3px var(--color-third) solid;
   text-decoration: none;
+  z-index: 1;
 }
