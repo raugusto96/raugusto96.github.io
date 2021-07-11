@@ -1,0 +1,44 @@
+.certificades {
+  margin-top: 17em;
+}
+
+.certificades h2 {
+  font-size: var(--headline-size);
+  font-weight: var(--headline-weight);
+  padding-bottom: 10px;
+}
+
+.certificades .certificade-global-content {
+  display: flex;
+}
+
+.certificades .certificade-global-content .certificade-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  justify-content: center;
+}
+
+.certificades .certificade-global-content .certificade-content h4 {
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  padding-bottom: 10px;
+}
+
+.certificades .certificade-global-content .certificade-content p {
+  font-size: var(--subtitle-size);
+  font-weight: var(--subtitle-weight);
+  color: var(--color-first);
+  padding-bottom: 10px;
+}
+
+.certificades .certificade-global-content .certificade-content span {
+  font-size: var(--body1-size);
+  font-weight: var(--body1-weight);
+  color: var(--color-first);
+}
+
+.certificades .logo-trybe {
+  margin-left: -10px;
+  width: 130px;
+}

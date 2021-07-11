@@ -41,7 +41,7 @@
   width: 350px;
   height: 350px;
   object-fit: cover;
-  filter: drop-shadow(var(--color-black-second) -10px 10px 0);
+  filter: drop-shadow(var(--color-black-second) 10px 10px 0);
   border-radius: 55px;
   margin-bottom: 4.1666vw;
   transform: scaleX(-1);
