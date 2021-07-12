@@ -18,6 +18,7 @@
   /* before elements color */
   --color-before-first: rgb(32, 32, 32);
   --color-before-second: rgb(52, 52, 52);
+  --color-before-third: rgb(58, 58, 58);
 
   --font-family: 'Inter', sans-serif;
   /* font weight*/

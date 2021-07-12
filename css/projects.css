@@ -1,8 +1,11 @@
 .projects {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 5% 10%;
   color: var(--color-third);
+  height: calc(100vw - 65vw);
+  z-index: 0;
 }
 
 .projects h1 {
@@ -27,4 +30,18 @@
 
 .projects .project-block .pixel-art {
   filter: drop-shadow(var(--color-black-third) 5px 5px);
+}
+
+.projects::before {
+  content: "PROJECTS";
+  position: absolute;
+  bottom: 3vw;
+  right: 7vw;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10vw;
+  text-align: right;
+  letter-spacing: 0.025em;
+  color: var(--color-before-third);
+  z-index: -1;
 }
