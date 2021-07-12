@@ -8,10 +8,23 @@
 .projects h1 {
   font-size: var(--intro-size);
   font-weight: var(--intro-weight);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .projects p {
   font-size: var(--title-size);
   font-weight: var(--title-weight);
+}
+
+.projects .project-block {
+  display: flex;
+}
+
+.projects .project-block .pixel-art-top {
+  position: absolute;
+  z-index: 1;
+}
+
+.projects .project-block .pixel-art {
+  filter: drop-shadow(var(--color-black-third) 5px 5px);
 }
