@@ -16,7 +16,7 @@ const server = createServer(async (req, res) => {
       send(200, await prisma.snakeScore.findMany({ take: 10, orderBy: [{ score: 'desc' }, { createdAt: 'asc' }, { id: 'asc' }], select: { id: true, nickname: true, score: true, createdAt: true } })); return
     }
     if (req.method !== 'POST') { send(405, { error: 'Method not allowed' }); return }
-    if (req.headers.origin && !['http://localhost:5173', 'http://127.0.0.1:5173'].includes(req.headers.origin)) { send(403, { error: 'Origin not allowed' }); return }
+    if (req.headers.origin && !['http://localhost:5173', 'http://127.0.0.1:5173', 'http://localhost:5174', 'http://127.0.0.1:5174'].includes(req.headers.origin)) { send(403, { error: 'Origin not allowed' }); return }
     if (!req.headers['content-type']?.startsWith('application/json')) { send(415, { error: 'JSON required' }); return }
     const now = Date.now()
     for (const [ip, entry] of attempts) if (entry.until < now) attempts.delete(ip)
