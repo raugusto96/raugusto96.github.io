@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react'
 import { t } from './i18n'
 import './SnakeRanking.css'
+const apiBase = import.meta.env.VITE_RANKING_API_URL?.replace(/\/+$/, '') ?? ''
+const rankingUrl = apiBase + '/api/ranking'
+const requestTimeout = apiBase ? 90000 : 10000
+
 type Entry = { id: string; nickname: string; score: number }
 export default function SnakeRanking({ finished, score, runId, onLog }: { finished: boolean; score: number; runId: string; onLog: (message: string) => void }) {
   const [entries, setEntries] = useState<Entry[]>([])
@@ -14,7 +18,7 @@ export default function SnakeRanking({ finished, score, runId, onLog }: { finish
   useEffect(() => {
     const controller = new AbortController()
     setLoading(true); setLoadError(false)
-    fetch('/api/ranking', { signal: controller.signal }).then(response => { if (!response.ok) throw new Error(); return response.json() }).then(setEntries).catch(error => { if (error.name !== 'AbortError') setLoadError(true) }).finally(() => { if (!controller.signal.aborted) setLoading(false) })
+    fetch(rankingUrl, { signal: AbortSignal.any([controller.signal, AbortSignal.timeout(requestTimeout)]) }).then(response => { if (!response.ok) throw new Error(); return response.json() }).then(setEntries).catch(error => { if (error.name !== 'AbortError') setLoadError(true) }).finally(() => { if (!controller.signal.aborted) setLoading(false) })
     return () => controller.abort()
   }, [revision])
   async function save() {
@@ -22,7 +26,7 @@ export default function SnakeRanking({ finished, score, runId, onLog }: { finish
     setSaving(true); setSaveError(false)
     onLog('Salvando pontuação no ranking...')
     try {
-      const response = await fetch('/api/ranking', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ nickname: nickname.trim(), score, runId }), signal: AbortSignal.timeout(10000) })
+      const response = await fetch(rankingUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ nickname: nickname.trim(), score, runId }), signal: AbortSignal.timeout(requestTimeout) })
       if (!response.ok) throw new Error()
       setSaved(true); setRevision(value => value + 1); onLog('Pontuação salva no ranking.')
     } catch { setSaveError(true); onLog('Não foi possível salvar a pontuação. Tente novamente.') }

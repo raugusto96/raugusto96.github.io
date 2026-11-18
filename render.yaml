@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: rodrigo-girodo-ranking
+    runtime: node
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: npm ci --include=dev && npm run db:generate
+    startCommand: npm run db:migrate && npm run api
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.21.0
+      - key: DATABASE_URL
+        sync: false
+      - key: DIRECT_DATABASE_URL
+        sync: false
