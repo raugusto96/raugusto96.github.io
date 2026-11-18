@@ -289,5 +289,12 @@
   "Avisos: {0}": "Warnings: {0}",
   "projetos.": "projects.",
   "Engenheiro de Software • Full Stack • Engenharia de IA Aplicada": "Software Engineer • Full Stack • Applied AI Engineering",
-  "Engenheiro de Software • Full Stack • Engenharia de IA Aplicada. Explore as ideias, as ferramentas e a pessoa por trás dos projetos.": "Software Engineer • Full Stack • Applied AI Engineering. Explore the ideas, tools and person behind the projects."
+  "Engenheiro de Software • Full Stack • Engenharia de IA Aplicada. Explore as ideias, as ferramentas e a pessoa por trás dos projetos.": "Software Engineer • Full Stack • Applied AI Engineering. Explore the ideas, tools and person behind the projects.",
+  "Desenvolvimento concluído": "Development complete",
+  "CÓDIGO FECHADO": "CLOSED SOURCE",
+  "Frontend em React e TypeScript, API em NestJS e persistência com Prisma e PostgreSQL.": "React and TypeScript frontend, NestJS API and persistence with Prisma and PostgreSQL.",
+  "Ver detalhes do projeto": "View project details",
+  "Gerencie contas e organize receitas e despesas por categoria.": "Manage accounts and organize income and expenses by category.",
+  "Importe extratos bancários e revise os lançamentos antes de confirmar.": "Import bank statements and review transactions before confirming.",
+  "A prevenção de duplicidades ajuda a evitar lançamentos repetidos ao importar novamente.": "Duplicate detection helps avoid repeated transactions when importing again."
 }

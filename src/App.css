@@ -292,3 +292,15 @@ main.text-main{padding:0;display:flex;overflow:hidden;background:var(--bg)}
 .material-file-icon { width: 22px; height: 22px; display: inline-block; vertical-align: middle; flex-shrink: 0; object-fit: contain; }
 
 .status-diagnostics,.status-branch,.status-diagnostics button{display:inline-flex;align-items:center;gap:5px}.status-diagnostics{gap:12px}.status-diagnostics svg{width:18px;height:18px;flex-shrink:0}.status-diagnostics button{font:inherit;color:inherit;border:0;background:transparent;padding:2px 3px;cursor:pointer}.status-diagnostics button:hover{background:#ffffff20}.status-diagnostics button:focus-visible{outline:1px solid currentColor;outline-offset:1px}
+.project-extra { margin-top: 18px; width: 100%; font-size: 13px; line-height: 1.6; }
+.project-extra summary { color: var(--accent); cursor: pointer; }
+.project-extra ul { padding-inline-start: 20px; margin: 10px 0 0; color: var(--muted); }
+.project-extra li + li { margin-top: 6px; }
+
+.zenith-mark {
+  display: block;
+  width: 52%;
+  height: auto;
+  transform: rotate(12deg);
+  filter: drop-shadow(0 8px 22px #326eff45);
+}
